@@ -1,0 +1,245 @@
+/* Basic reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container for tabs */
+.tab-container {
+    width: 85%;
+    margin: 10px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Tab navigation menu */
+.tab-menu {
+    position: fixed;
+    top: 0; /* Position at the top of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 85%; /* Set width to 85% */
+    background: #333;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for separation */
+    z-index: 1000; /* Ensure it stays above other content */
+    transition: top 0.3s ease-in-out; /* Smooth transition for movement */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+
+.tab-link {
+    flex: 1;
+    padding: 15px;
+    background: #2c2c2c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+.tab-link:hover, .tab-link.active {
+    background: #474747;
+}
+
+.tab-link:focus {
+    outline: none;
+}
+
+/* Content for each tab */
+.tab-content {
+    margin-top: 60px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    padding: 20px;
+    display: none;
+}
+
+.tab-content h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.tab-content p {
+    font-size: 1.2em;
+}
+
+/* Show the active tab content */
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+
+
+/* Home tab content */
+
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+    padding: 20px;
+}
+
+.home-image {
+    flex: 1;
+    max-width: 300px; /* Adjust size as needed */
+    max-height: 300px;
+    margin-right: 100px;
+    text-align: center; /* Center the image horizontally */
+}
+
+.home-image img {
+    width: 100%;
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-info {
+    flex: 2;
+    text-align: left;
+}
+
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Adjusts the space above the icons */
+}
+
+.social-media-icons a {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 50px; /* Adjust the size of your icons */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarges the icon on hover */
+    opacity: 0.8; /* Slightly reduces opacity on hover */
+}
+
+
+
+
+.home-info h1 {
+    
+    font-size: 36px;
+}
+
+.home-info h5 {
+    font-size: 15px;
+
+}
+
+.home-info p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+
+.home-details {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.home-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.home-details li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+    /* About */
+.about-content {
+    padding: 20px;
+    background: #f9f9f9; /* Light background */
+    margin-top: 30px;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+    /* Footer */
+
+
+.footer {
+    background-color: #ffffff; /* White background for the footer */
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd; /* Subtle border to separate footer */
+    margin-top: 40px; /* Space above footer */
+}
+
+.footer-content {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    width: 50px; /* Small logo size */
+    margin-right: 10px;
+}
+
+.footer p {
+    color: #333;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin: 0 0 10px 0; /* Margin below the logo on small screens */
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .home-image {
+        margin: 0 0 20px 0; /* Add margin below the image on small screens */
+    }
+    
+    .home-info {
+        text-align: center;
+    }
+}

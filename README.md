@@ -18,9 +18,7 @@ You can view the live version of this portfolio by navigating to the following U
 
 In the future, I plan to expand this portfolio with more detailed project pages, integrate more advanced web development techniques, and update my progress on ongoing certifications and skills development.
 
-## License
 
-This project is licensed under the MIT License. Feel free to use and modify it as you like.
 
 ---
 
